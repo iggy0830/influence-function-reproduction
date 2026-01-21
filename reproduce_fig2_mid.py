@@ -463,10 +463,3 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-
-# Conclusion: The Pearson correlation is 0.9694, showing that influence function predictions closely match the actual LOO retraining results.
-
-# *
-# The plot is more scattered than the paper because  LiSSA is a stochastic approximation of the inverse Hessian vector product
-# The noise could be reduced with larger batches or conjugate gradients，but the computation cost would be much higher
-
