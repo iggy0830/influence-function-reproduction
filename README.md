@@ -14,17 +14,14 @@ for every training point.
 ## 1. Method Overview
 
 This implementation follows the influence function formulation under the
-**empirical risk minimization (ERM)** framework.
+empirical risk minimization (ERM) framework.
 
-Given a trained model \(\hat{\theta}\), the influence of a training point
-\(z\) on the loss at a test point \(z_{\text{test}}\) is approximated as:
+Given a trained model θ̂, the influence of a training point z on the loss
+at a test point z_test is approximated as:
 
-\[
-I_{\text{up,loss}}(z, z_{\text{test}})
-= - \nabla_\theta L(z_{\text{test}}, \hat{\theta})^\top
-H^{-1}
-\nabla_\theta L(z, \hat{\theta})
-\]
+I_up,loss(z, z_test)
+= - ∇_θ L(z_test, θ̂)^T H^{-1} ∇_θ L(z, θ̂)
+
 
 Instead of explicitly computing or inverting the Hessian, this project
 approximates the **inverse Hessian–vector product (IHVP)** using a **stochastic
