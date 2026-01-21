@@ -68,10 +68,17 @@ This is expected for several reasons:
 
 ## How to Run
 
-```bash
+# Create a virtual environment
 python3 -m venv venv
+
+# Activate the virtual environment
 source venv/bin/activate
+
+# Install required dependencies
 pip install torch torchvision numpy matplotlib
+
+# Run the reproduction script
 python reproduce_fig2_mid.py
+
 
 
